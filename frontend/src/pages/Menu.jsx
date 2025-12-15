@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { pizzas } from '../data/pizzas';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../context/Cartcontext';
 import '../styles/menu.css';
 
 const Menu = () => {

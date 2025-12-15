@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/Cartcontext";
 import { useAuth } from "../context/AuthContext";
 import axios from "axios";
 import { useState } from "react";
