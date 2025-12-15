@@ -5,7 +5,8 @@ import { useAuth } from "../context/AuthContext";
 import axios from "axios";
 import "../styles/orders.css";
 
-const API_BASE = "https://pizza-app-mbty.onrender.com";
+const API_BASE = import.meta.env.VITE_API_BASE;
+
 
 const Orders = () => {
   const { isAuthenticated, token } = useAuth();

@@ -6,7 +6,8 @@ import axios from "axios";
 import { useState } from "react";
 import "../styles/cart.css";
 
-const API_BASE = "https://pizza-app-mbty.onrender.com";
+const API_BASE = import.meta.env.VITE_API_BASE;
+
 
 const Cart = () => {
   const { items, updateQuantity, removeFromCart, totalPrice, clearCart } =
