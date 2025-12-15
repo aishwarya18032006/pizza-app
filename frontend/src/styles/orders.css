@@ -1,0 +1,279 @@
+/* ============================================
+   ORDERS PAGE STYLES
+   ============================================ */
+
+.orders-page {
+  min-height: 100vh;
+  padding: 6rem 0 5rem;
+}
+
+.orders-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.orders-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.orders-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.orders-title-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.orders-count {
+  color: var(--muted);
+}
+
+.refresh-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.refresh-btn:hover {
+  color: var(--foreground);
+  background-color: var(--secondary);
+  border-radius: 0.5rem;
+}
+
+.refresh-btn svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Orders List */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Order Card */
+.order-card {
+  padding: 1.5rem;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.order-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.order-id-label {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+}
+
+.order-id {
+  font-family: monospace;
+  font-size: 0.875rem;
+}
+
+.order-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.order-date svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.order-status {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--success);
+  background-color: rgba(34, 197, 94, 0.2);
+  border-radius: 9999px;
+}
+
+/* Order Items */
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-item-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.order-item-quantity {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: var(--secondary);
+  border-radius: 50%;
+}
+
+.order-item-price {
+  color: var(--muted);
+}
+
+/* Order Total */
+.order-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.order-total-label {
+  font-weight: 600;
+}
+
+.order-total-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* Loading */
+.loading-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0 5rem;
+}
+
+.loading-spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 4px solid var(--primary);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Empty Orders */
+.empty-orders {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0 5rem;
+}
+
+.empty-orders-content {
+  text-align: center;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.empty-orders-icon {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  background-color: var(--secondary);
+  border-radius: 50%;
+}
+
+.empty-orders-icon svg {
+  width: 3rem;
+  height: 3rem;
+  color: var(--muted);
+}
+
+.empty-orders-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.empty-orders-text {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.browse-menu-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  color: var(--primary-foreground);
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  transition: all var(--transition-normal);
+}
+
+.browse-menu-link:hover {
+  background-color: var(--primary-light);
+  transform: scale(1.02);
+}
+
+.browse-menu-link svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+/* DELETE ORDER BUTTON */
+.delete-order-btn {
+  margin-top: 10px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.delete-order-btn:hover {
+  background-color: #e63939;
+  transform: scale(1.05);
+}
