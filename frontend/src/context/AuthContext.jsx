@@ -3,9 +3,6 @@ import axios from "axios";
 
 const API_BASE = import.meta.env.VITE_API_BASE;
 
-
-
-
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
@@ -26,10 +23,10 @@ export const AuthProvider = ({ children }) => {
     setIsLoading(false);
   }, []);
 
-  // ✅ LOGIN
+  // ✅ LOGIN (ONLY THIS LINE FIXED)
   const login = async (email, password) => {
     try {
-      const res = await axios.post(`${API_BASE}/login`, {
+      const res = await axios.post(`${API_BASE}/api/auth/login`, {
         email,
         password,
       });
@@ -47,10 +44,10 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  // ✅ REGISTER (NO TOKEN EXPECTED)
+  // ✅ REGISTER (ONLY THIS LINE FIXED)
   const register = async (name, email, password) => {
     try {
-      await axios.post(`${API_BASE}/register`, {
+      await axios.post(`${API_BASE}/api/auth/register`, {
         name,
         email,
         password,
