@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import axios from "axios";
 
-const API_BASE = "http://127.0.0.1:5000/api/auth";
+const API_BASE = "https://pizza-app-mbty.onrender.com";
 
 
 
