@@ -25,3 +25,7 @@ const sendOrderMail = async (to, order) => {
 };
 
 module.exports = sendOrderMail;
+console.log("📧 MAIL FUNCTION CALLED");
+console.log("To:", toEmail);
+console.log("Order ID:", order._id);
+console.log("Order Total:", order.total);
